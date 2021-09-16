@@ -1,28 +1,27 @@
 import React, {useState} from 'react';
+import AddCategory from './components/AddCategory';
 
 
 
 const GifExpertApp = () => {
 
-    // const categories = ['Warframe', 'God of war', 'Dark souls'];
-
     const [categories, setCategories] = useState(['Warframe', 'God of war', 'Dark souls']);
 
-    const newGame = 'Assassins creed';
+    // const newGame = 'Assassins creed';
     
-    const handleAdd = (event) => {
+    // const handleAdd = (event) => {
         
-        // setCategories( [...categories, newGame] );
-        setCategories(  cats => [...cats, newGame] );
+    //     // setCategories( [...categories, newGame] );
+    //     setCategories(  cats => [...cats, newGame] );
 
-    };
+    // };
 
     return (
         <>
             <h2>GifExpertApp</h2>
+            {/* Se pasa la referencia a setCategories al componenteAdcategories */}
+            <AddCategory setCategories={setCategories} />
             <hr />
-
-            <button id="btnAgregar" onClick={ handleAdd } >Agregar</button>
 
             <ol>
                 {
