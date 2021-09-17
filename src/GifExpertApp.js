@@ -1,20 +1,14 @@
 import React, {useState} from 'react';
+
 import AddCategory from './components/AddCategory';
+import GifGrid from './components/GifGrid';
 
 
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Warframe', 'God of war', 'Dark souls']);
-
-    // const newGame = 'Assassins creed';
-    
-    // const handleAdd = (event) => {
-        
-    //     // setCategories( [...categories, newGame] );
-    //     setCategories(  cats => [...cats, newGame] );
-
-    // };
+    // const [categories, setCategories] = useState(['Warframe', 'God of war', 'Dark souls']);
+    const [categories, setCategories] = useState(['Warframe']);
 
     return (
         <>
@@ -25,12 +19,12 @@ const GifExpertApp = () => {
 
             <ol>
                 {
-                    categories.map( categorie => {
-                        return (
-                            // El key siempre sera ell mismo elemento que se coloca
-                            <li key={categorie} >{categorie}</li>
-                        )
-                    })
+                    categories.map( category =>    
+                        <GifGrid
+                            key={category}
+                            category={category}
+                        />
+                    )
                 }
             </ol>
         </>

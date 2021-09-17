@@ -10,7 +10,7 @@ const AddCategory = ({setCategories}) => {
     };
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        event.preventDefault();     // Evitar el refresh del navegador con form
 
         if ( inputValue.trim().length > 2 ){
             // Se cambia el valor en la lista con el nuevo estado del input value
