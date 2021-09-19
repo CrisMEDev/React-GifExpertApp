@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const AddCategory = ({setCategories}) => {
 
-    const [inputValue, setInputValue] = useState('Hola mundo');
+    const [inputValue, setInputValue] = useState('');   // Valor por defecto en la caja input
 
     const handleInputChange = (event) => {
         setInputValue( event.target.value );
@@ -22,7 +22,7 @@ const AddCategory = ({setCategories}) => {
     };
 
     return (
-        // EL onUbmit es atrapado en el event del handleSubmit
+        // EL onSubmit es atrapado en el event del handleSubmit
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
