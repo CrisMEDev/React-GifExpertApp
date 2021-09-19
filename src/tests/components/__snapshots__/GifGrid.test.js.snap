@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <GifGrid /> Debe de mostrar el componente correctamente 1`] = `
+<Fragment>
+  <h3>
+    warframe
+  </h3>
+  <p>
+    Cargando...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en el componente <GifGrid /> Debe de mostrar items cuando se cargan imágenes useFetchGifs 1`] = `
+<Fragment>
+  <h3>
+    warframe
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ascnascknasc"
+      key="ascnascknasc"
+      title="My awesome title"
+      url="https://the_best_url.jpg"
+    />
+    <GifGridItem
+      id="ascascasc"
+      key="ascascasc"
+      title="My awesome title 2"
+      url="https://the_best_url2.jpg"
+    />
+  </div>
+</Fragment>
+`;
