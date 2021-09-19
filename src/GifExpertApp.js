@@ -5,10 +5,10 @@ import GifGrid from './components/GifGrid';
 
 
 
-const GifExpertApp = () => {
+const GifExpertApp = ({ defaultCategories = [] }) => {
 
     // const [categories, setCategories] = useState(['Warframe', 'God of war', 'Dark souls']);
-    const [categories, setCategories] = useState(['Warframe']);
+    const [categories, setCategories] = useState( defaultCategories );
 
     return (
         <>

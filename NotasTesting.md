@@ -11,3 +11,5 @@ Después de configurar lo anterior en el archivo **setupTests.js**, ` npm instal
 Para tener ayuda de autcompletado de jest hay que instalar  los tipos para jest con la instrucción:
 
 ` npm install -D @types/jest `
+
+Para probar los customHooks usar [React Hokks Testing Library](https://react-hooks-testing-library.com/installation)
